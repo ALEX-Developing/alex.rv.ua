@@ -21,4 +21,8 @@ class RouteController extends Controller
     public function services() {
         return view('services.index');
     }
+
+    public function account() {
+        return view('account.index');
+    }
 }

@@ -103,16 +103,15 @@
         <img src="{{ URL('img/back.svg') }}" alt="go-back" class="back-img">
         <span>Команда</span>
     </a>
-    {{-- profile.edit --}}
+
     <a href="{{ route('account', ['select=settings']) }}" class="header__link sixth settings-btn">
         <div></div>
         <img src="{{ URL('img/back.svg') }}" alt="go-back" class="back-img">
         <span>Налаштування</span>
     </a>
 @endif
-
-<!-- Authentication -->
-<form method="POST" action="">
+<!-- Exit -->
+<form method="POST" action="{{ route('logout') }}">
     @csrf
     <a class="header__link logout" href="{{ route('logout') }}" onclick="event.preventDefault(); this.closest('form').submit();">
         <div></div>
@@ -120,16 +119,17 @@
         <span>Вихід</span>
     </a>
 </form>
+
 @else
 <div class="header__form-slider">
     <div>
-        <form class="header__form" method="POST" action="">
+        <form class="header__form" method="POST" action="{{ route('login') }}">
             <h4 class="header__form-subtitle subtitle">Система контролю розробки</h4>
             @csrf
         
             <!-- Phone -->
             <div>
-                <input id="phone" class="input-login header__input-login" type="phone" name="phone" :value="old('Phone')" required autofocus autocomplete="phone" placeholder="Ваш Телефон" />
+                <input id="phone" class="input-login header__input-login" type="tel" name="phone" :value="old('Phone')" required autofocus autocomplete="phone" placeholder="Ваш Телефон" />
             </div>
         
             <!-- Password -->
@@ -149,22 +149,17 @@
             <button type="submit" class="form-btn-submit login">Увійти</button>
             <div class="form-btn-submit register">Реєстрація</div>
         </form>
-        <form method="POST" action="">
+        <form method="POST" action="{{ route('register') }}">
             <h4 class="header__form-subtitle subtitle">Реєстрація</h4>
             @csrf
-            <!-- Forename -->
+            <!-- Name -->
             <div>
-                <input id="forename" class="input-login input-login header__input-login" type="text" name="forename" :value="old('Forename')" required autofocus autocomplete="forename" placeholder="Імʼя" />
-            </div>
-
-            <!-- Surname -->
-            <div>
-                <input id="surname" class="input-login input-login header__input-login" type="text" name="surname" :value="old('Surname')" required autofocus autocomplete="surname" placeholder="Прізвище" />
+                <input id="name" class="input-login input-login header__input-login" type="text" name="name" :value="old('Name')" required autofocus autocomplete="name" placeholder="Імʼя, Прізвище" />
             </div>
 
             <!-- Phone -->
             <div class="mt-4">
-                <input id="phone" class="input-login input-login header__input-login" type="number" name="phone" :value="old('Phone')" required autocomplete="phone" placeholder="Ваш Телефон" />
+                <input id="phone" class="input-login input-login header__input-login" type="tel" name="phone" :value="old('Phone')" required autocomplete="phone" placeholder="Ваш Телефон" />
             </div>
 
             <!-- Password -->

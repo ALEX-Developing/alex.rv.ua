@@ -139,7 +139,6 @@
                     </div>
                 </div>
                 <div class="header__account-form">
-                    <h4 class="header__form-subtitle subtitle">Система контролю розробки</h4>
                     @if (Route::has('login'))
                         @yield('nav-system-control')
                     @endif

@@ -19,7 +19,7 @@ active
 @vite(['resources/js/projects.js'])
 @endsection
 
-<x-app-layout>
+<x-app>
   <section class="top">
     <div class="top__container container">
       <h1 class="top__title title">Наші Проєкти</h1>
@@ -93,4 +93,4 @@ active
       </div>
     </div>
   </section>
-</x-app-layout>
+</x-app>

@@ -19,7 +19,7 @@ active
 @vite(['resources/js/team.js'])
 @endsection
 
-<x-app-layout>
+<x-app>
   <section class="all-team">
     <!-- <div class="all-team__circle circle">
       <h5 class="circle__h5">клік</h5>

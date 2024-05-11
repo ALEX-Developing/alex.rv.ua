@@ -19,7 +19,7 @@ active
 @vite(['resources/js/price.js'])
 @endsection
 
-<x-app-layout>
+<x-app>
   <section class="top">
     <div class="top__container container">
       <div class="top__left-block">
@@ -221,4 +221,4 @@ active
       </div>
     </div>
   </section>
-</x-app-layout>
+</x-app>

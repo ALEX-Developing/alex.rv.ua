@@ -1,5 +1,11 @@
 import './bootstrap';
 
+import Alpine from 'alpinejs';
+
+window.Alpine = Alpine;
+
+Alpine.start();
+
 const hideAllPopups = function() {
 	$('.header__account-show,.header__account-hide,.header__account-form,.header__contacts-show,.header__contacts-hide,.header__contacts,.header__contacts-active,.contacts-block,.header__burger-show,.header__burger-hide,.header__btn-burger,.header__burger-active,.menu,.blur,.header__form-slider').removeClass('active');
 	$('.header__btn-account').removeClass('hide');

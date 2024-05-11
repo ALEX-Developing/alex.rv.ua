@@ -2,7 +2,7 @@
   <title>ALEX Developing</title>
 @endsection
 
-@section('welcome-nav-status')
+@section('account-nav-status')
 active
 @endsection
 
@@ -12,4 +12,5 @@ active
 @endsection
 
 <x-app>
+  <h1 class="title" style="color:#fff;">Система Контролю Розробки</h1>
 </x-app>
