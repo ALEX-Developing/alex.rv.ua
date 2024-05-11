@@ -1,0 +1,11 @@
+$('.services__filter-btn.create').click(function(event){
+  $('.services__lists-slider').removeClass('second');
+  $('.services__filter-btn').removeClass('active');
+  $('.services__filter-btn.create').addClass('active');
+})
+$('.services__filter-btn.service').click(function(event){
+  $('.services__lists-slider').removeClass('second');
+  $('.services__lists-slider').addClass('second');
+  $('.services__filter-btn').removeClass('active');
+  $('.services__filter-btn.service').addClass('active');
+})
