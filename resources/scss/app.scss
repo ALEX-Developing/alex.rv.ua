@@ -680,6 +680,39 @@ a {
     margin-bottom: 12px;
   }
 
+  &__input-container {
+    position: relative;
+    margin-bottom: 10px;
+
+    &.last {
+      margin-bottom: 0;
+    }
+  }
+
+  &__eye-pws {
+    cursor: url(img/cursor-click.svg), pointer;
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 30px;
+
+    &.hide {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+    &.show {
+      display: block;
+
+      &.active {
+        display: none;
+      }
+    }
+  }
+
   &__input-login {
     width: 100%;
     background: none;
@@ -688,10 +721,9 @@ a {
     padding: 7px 10px;
     font-size: 18px;
     color: #6495ED;
-    margin-bottom: 10px;
 
     &.password {
-      margin-bottom: 5px;
+      margin-bottom: 0;
     }
   
     &:hover, &:focus {
@@ -709,6 +741,7 @@ a {
 
   &__reset-password {
     display: inline-block;
+    margin-top: 5px;
     margin-left: 10px;
     margin-bottom: 10px;
     &:hover, &:focus {
@@ -754,6 +787,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 10px;
   }
 
   &__btn-login {

@@ -1,6 +1,7 @@
 @auth
-<p class="header__user-name">Вітаю, {{ Auth::user()->name }}</p>
-@if (Auth::user()->usertype == 'user')
+@if (Auth::user()->type_id == 1)
+    <h4 class="header__form-subtitle subtitle">Система контролю розробки</h4>
+    <p class="header__user-name">Вітаю, {{ Auth::user()->name }}</p>
     <div class="header__user-type-email">
         <p class="header__user-type"></p>
         <p class="header__user-email">{{ Auth::user()->email }}</p>
@@ -36,7 +37,9 @@
         <span>Налаштування</span>
     </a>
 @endif
-@if (Auth::user()->usertype == 'dev')
+@if (Auth::user()->type_id == 2)
+    <h4 class="header__form-subtitle subtitle">Система контролю розробки</h4>
+    <p class="header__user-name">Вітаю, {{ Auth::user()->name }}</p>
     <div class="header__user-type-email">
         <p class="header__user-type">Розробник</p>
         <p class="header__user-email">{{ Auth::user()->email }}</p>
@@ -66,9 +69,9 @@
         <span>Налаштування</span>
     </a>
 @endif
-@if (Auth::user()->usertype == 'admin')
-
+@if (Auth::user()->type_id == 3)
     <h4 class="header__form-subtitle subtitle">Система контролю розробки</h4>
+    <p class="header__user-name">Вітаю, {{ Auth::user()->name }}</p>
     <div class="header__user-type-email">
         <p class="header__user-type">СуперАдмін</p>
         <p class="header__user-email">{{ Auth::user()->email }}</p>
@@ -128,16 +131,15 @@
             @csrf
         
             <!-- Phone -->
-            <div>
-                <input id="phone" class="input-login header__input-login" type="tel" name="phone" :value="old('Phone')" required autofocus autocomplete="phone" placeholder="Ваш Телефон" />
+            <div class="header__input-container">
+                <input id="phone" class="input-login header__input-login phone" type="tel" name="phone" :value="old('Phone')" required autofocus autocomplete="phone" placeholder="Ваш Телефон" />
             </div>
         
             <!-- Password -->
-            <div class="mt-4">
-                <input id="password" class="input-login header__input-login password"
-                                type="password"
-                                name="password"
-                                required autocomplete="current-password" placeholder="Пароль"/>
+            <div class="header__input-container last password">
+                <input id="password" class="input-login header__input-login password" minlength="8" type="password" name="password" required autocomplete="current-password" placeholder="Пароль"/>
+                <img src="{{ URL('img/show-eye.svg') }}" alt="" class="header__eye-pws show">
+                <img src="{{ URL('img/hide-eye.svg') }}" alt="" class="header__eye-pws hide">
             </div>
         
             @if (Route::has('password.request'))
@@ -153,28 +155,27 @@
             <h4 class="header__form-subtitle subtitle">Реєстрація</h4>
             @csrf
             <!-- Name -->
-            <div>
+            <div class="header__input-container">
                 <input id="name" class="input-login input-login header__input-login" type="text" name="name" :value="old('Name')" required autofocus autocomplete="name" placeholder="Імʼя, Прізвище" />
             </div>
 
             <!-- Phone -->
-            <div class="mt-4">
-                <input id="phone" class="input-login input-login header__input-login" type="tel" name="phone" :value="old('Phone')" required autocomplete="phone" placeholder="Ваш Телефон" />
+            <div class="header__input-container">
+                <input id="phone" class="input-login input-login header__input-login phone" type="tel" name="phone" :value="old('Phone')" required autocomplete="phone" placeholder="Ваш Телефон" />
             </div>
 
             <!-- Password -->
-            <div class="mt-4">
-                <input id="password" class="input-login input-login header__input-login"
-                                type="password"
-                                name="password"
-                                required autocomplete="new-password" placeholder="Придумайте пароль" />
+            <div class="header__input-container password">
+                <input id="password" class="input-login input-login header__input-login" type="password" name="password" minlength="8" required autocomplete="new-password" placeholder="Придумайте пароль" />
+                <img src="{{ URL('img/show-eye.svg') }}" alt="" class="header__eye-pws show">
+                <img src="{{ URL('img/hide-eye.svg') }}" alt="" class="header__eye-pws hide">
             </div>
 
             <!-- Confirm Password -->
-            <div class="mt-4">
-                <input id="password_confirmation" class="input-login input-login header__input-login"
-                                type="password"
-                                name="password_confirmation" required autocomplete="new-password" placeholder="Повторіть пароль" />
+            <div class="header__input-container last password">
+                <input id="password_confirmation" class="input-login input-login header__input-login" type="password" name="password_confirmation" required autocomplete="new-password" placeholder="Повторіть пароль" />
+                <img src="{{ URL('img/show-eye.svg') }}" alt="" class="header__eye-pws show">
+                <img src="{{ URL('img/hide-eye.svg') }}" alt="" class="header__eye-pws hide">
             </div>
 
             <div class="header__registr-buttons-flex">
