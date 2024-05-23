@@ -120,3 +120,16 @@ $(window).scroll(function() {
 		st = nst;
 	}
 });
+
+// показ попапа, коли форма успішно відправлена
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+
+		// Show the popup
+		const popup = document.getElementById('successPopup');
+		popup.style.display = 'block';
+
+		// Hide the popup after 5 seconds
+		setTimeout(() => {
+				popup.style.display = 'none';
+		}, 5000);
+});

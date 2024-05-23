@@ -7,31 +7,31 @@
         <p class="header__user-email">{{ Auth::user()->email }}</p>
     </div>
 
-    <a href="{{ route('account', ['select=projects']) }}" class="header__link first projects-btn">
+    <a href="{{ route('account', ['generalSelector=projects']) }}" class="header__link first projects-btn">
         <div></div>
         <img src="{{ URL('img/back.svg') }}" alt="go-back" class="back-img">
         <span>Ваші проєкти</span>
     </a>
 
-    <a href="{{ route('account', ['select=discounts']) }}" class="header__link second discounts-btn">
+    <a href="{{ route('account', ['generalSelector=discounts']) }}" class="header__link second discounts-btn">
         <div></div>
         <img src="{{ URL('img/back.svg') }}" alt="go-back" class="back-img">
         <span>Ваші знижки</span>
     </a>
 
-    <a href="{{ route('account', ['select=referal']) }}" class="header__link third referal-btn">
+    <a href="{{ route('account', ['generalSelector=referal']) }}" class="header__link third referal-btn">
         <div></div>
         <img src="{{ URL('img/back.svg') }}" alt="go-back" class="back-img">
         <span>Реферальна програма</span>
     </a>
 
-    <a href="{{ route('account', ['select=cash-account']) }}" class="header__link forth cash-account-btn">
+    <a href="{{ route('account', ['generalSelector=cash-account']) }}" class="header__link forth cash-account-btn">
         <div></div>
         <img src="{{ URL('img/back.svg') }}" alt="go-back" class="back-img">
         <span>Особистий рахунок</span>
     </a>
     {{-- profile.edit --}}
-    <a href="{{ route('account', ['select=settings']) }}" class="header__link fifth settings-btn">
+    <a href="{{ route('account', ['generalSelector=settings']) }}" class="header__link fifth settings-btn">
         <div></div>
         <img src="{{ URL('img/back.svg') }}" alt="go-back" class="back-img">
         <span>Налаштування</span>
@@ -45,25 +45,25 @@
         <p class="header__user-email">{{ Auth::user()->email }}</p>
     </div>
 
-    <a href="{{ route('account', ['select=projects']) }}" class="header__link first projects-btn">
+    <a href="{{ route('account', ['generalSelector=projects']) }}" class="header__link first projects-btn">
         <div></div>
         <img src="{{ URL('img/back.svg') }}" alt="go-back" class="back-img">
         <span>Проєкти</span>
     </a>
 
-    <a href="{{ route('account', ['select=referal']) }}" class="header__link second referal-btn">
+    <a href="{{ route('account', ['generalSelector=referal']) }}" class="header__link second referal-btn">
         <div></div>
         <img src="{{ URL('img/back.svg') }}" alt="go-back" class="back-img">
         <span>Реферальна програма</span>
     </a>
 
-    <a href="{{ route('account', ['select=cash-account']) }}" class="header__link third cash-account-btn">
+    <a href="{{ route('account', ['generalSelector=cash-account']) }}" class="header__link third cash-account-btn">
         <div></div>
         <img src="{{ URL('img/back.svg') }}" alt="go-back" class="back-img">
         <span>Особистий рахунок</span>
     </a>
     {{-- profile.edit --}}
-    <a href="{{ route('account', ['select=settings']) }}" class="header__link forth settings-btn">
+    <a href="{{ route('account', ['generalSelector=settings']) }}" class="header__link forth settings-btn">
         <div></div>
         <img src="{{ URL('img/back.svg') }}" alt="go-back" class="back-img">
         <span>Налаштування</span>
@@ -77,37 +77,37 @@
         <p class="header__user-email">{{ Auth::user()->email }}</p>
     </div>
 
-    <a href="{{ route('account', ['select=payments']) }}" class="header__link first payments-btn">
+    <a href="{{ route('account', ['generalSelector=payments']) }}" class="header__link first payments-btn">
         <div></div>
         <img src="{{ URL('img/back.svg') }}" alt="go-back" class="back-img">
         <span>Оплати</span>
     </a>
 
-    <a href="{{ route('account', ['select=orders']) }}" class="header__link second orders-btn">
+    <a href="{{ route('account', ['generalSelector=orders']) }}" class="header__link second orders-btn">
         <div></div>
         <img src="{{ URL('img/back.svg') }}" alt="go-back" class="back-img">
         <span>Заявки</span>
     </a>
 
-    <a href="{{ route('account', ['select=projects']) }}" class="header__link third projects-btn">
+    <a href="{{ route('account', ['generalSelector=projects']) }}" class="header__link third projects-btn">
         <div></div>
         <img src="{{ URL('img/back.svg') }}" alt="go-back" class="back-img">
         <span>Проєкти</span>
     </a>
 
-    <a href="{{ route('account', ['select=users']) }}" class="header__link forth users-btn">
+    <a href="{{ route('account', ['generalSelector=users']) }}" class="header__link forth users-btn">
         <div></div>
         <img src="{{ URL('img/back.svg') }}" alt="go-back" class="back-img">
         <span>Користувачі</span>
     </a>
 
-    <a href="{{ route('account', ['select=team']) }}" class="header__link fifth team-btn">
+    <a href="{{ route('account', ['generalSelector=team']) }}" class="header__link fifth team-btn">
         <div></div>
         <img src="{{ URL('img/back.svg') }}" alt="go-back" class="back-img">
         <span>Команда</span>
     </a>
 
-    <a href="{{ route('account', ['select=settings']) }}" class="header__link sixth settings-btn">
+    <a href="{{ route('account', ['generalSelector=settings']) }}" class="header__link sixth settings-btn">
         <div></div>
         <img src="{{ URL('img/back.svg') }}" alt="go-back" class="back-img">
         <span>Налаштування</span>

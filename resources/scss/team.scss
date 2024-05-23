@@ -1,5 +1,5 @@
 .all-team {
-  background: url('img/team/team.png') bottom center / auto 67.5% no-repeat, url('img/team/bg.jpg') bottom center / auto 100% no-repeat;
+  background: url('../../img/team/team.png') bottom center / auto 67.5% no-repeat, url('../../img/team/bg.jpg') bottom center / auto 100% no-repeat;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -18,7 +18,7 @@
   }
 
   &__cloud {
-    cursor: url(img/cursor-click.svg), pointer;
+    cursor: url(../../img/cursor-click.svg), pointer;
 
     &.none {
       transform: scale(0);
@@ -41,7 +41,7 @@
     height: 81%;
 
     & > path {
-      cursor: url(img/cursor-click.svg), pointer;
+      cursor: url(../../img/cursor-click.svg), pointer;
       fill: #ffffff00;
 
       &.active {
@@ -243,7 +243,7 @@
 
     &:after {
       transition: all 0.2s ease;
-      content: url('img/up.svg');
+      content: url('../../img/up.svg');
     }
   }
 
@@ -460,7 +460,7 @@
     justify-content: center;
     padding: 0 10px;
     overflow: hidden;
-    cursor: url(img/cursor-click.svg), pointer;
+    cursor: url(../../img/cursor-click.svg), pointer;
 
     &:hover {
 
@@ -506,50 +506,50 @@
   }
 }
 .alex-map .projects__bg {
-  background: url('img/projects/alex-map.png') top left / cover no-repeat;
+  background: url('../../img/projects/alex-map.png') top left / cover no-repeat;
 }
 .evil-lev .projects__bg {
-  background: url('img/projects/evil-lev.tech.png') top left / cover no-repeat;
+  background: url('../../img/projects/evil-lev.tech.png') top left / cover no-repeat;
 }
 .greathouse .projects__bg {
-  background: url('img/projects/greathouse.png') top left / cover no-repeat;
+  background: url('../../img/projects/greathouse.png') top left / cover no-repeat;
 }
 .aobox .projects__bg {
-  background: url('img/projects/aobox.tech.png') top left / cover no-repeat;
+  background: url('../../img/projects/aobox.tech.png') top left / cover no-repeat;
 }
 .superbulka .projects__bg {
-  background: url('img/projects/superbulka.shop.png') top left / cover no-repeat;
+  background: url('../../img/projects/superbulka.shop.png') top left / cover no-repeat;
 }
 .virtual-cube-online .projects__bg {
-  background: url('img/projects/virtual-cube.online.png') top left / cover no-repeat;
+  background: url('../../img/projects/virtual-cube.online.png') top left / cover no-repeat;
 }
 .g-drilling .projects__bg {
-  background: url('img/projects/g-drilling.tech.png') top left / cover no-repeat;
+  background: url('../../img/projects/g-drilling.tech.png') top left / cover no-repeat;
 }
 .turbosanok .projects__bg {
-  background: url('img/projects/turbosanok.store.png') top left / cover no-repeat;
+  background: url('../../img/projects/turbosanok.store.png') top left / cover no-repeat;
 }
 .misto-green .projects__bg {
-  background: url('img/projects/misto-green.site.png') top left / cover no-repeat;
+  background: url('../../img/projects/misto-green.site.png') top left / cover no-repeat;
 }
 .greenla-park .projects__bg {
-  background: url('img/projects/greenla-park.site.png') top left / cover no-repeat;
+  background: url('../../img/projects/greenla-park.site.png') top left / cover no-repeat;
 }
 .smile-dental-club .projects__bg {
-  background: url('img/projects/smile-dental-club.xyz.png') top left / cover no-repeat;
+  background: url('../../img/projects/smile-dental-club.xyz.png') top left / cover no-repeat;
 }
 .g-vision .projects__bg {
-  background: url('img/projects/g-vision.tech.png') top left / cover no-repeat;
+  background: url('../../img/projects/g-vision.tech.png') top left / cover no-repeat;
 }
 .twelve-beach .projects__bg {
-  background: url('img/projects/twelve-beach.club.png') top left / cover no-repeat;
+  background: url('../../img/projects/twelve-beach.club.png') top left / cover no-repeat;
 }
 
 .circles-choose {
 
   &__img {
     display: inline-block;
-    cursor: url(img/cursor-click.svg), pointer;
+    cursor: url(../../img/cursor-click.svg), pointer;
     width: 80px;
     height: 80px;
     margin-right: 10px;
@@ -843,7 +843,7 @@
 
       &:after {
         transition: all 0.2s ease;
-        content: url('img/up.svg');
+        content: url('../../img/up.svg');
       }
     }
 
@@ -901,7 +901,7 @@
 
       &:after {
         transition: all 0.2s ease;
-        content: url('img/up.svg');
+        content: url('../../img/up.svg');
       }
     }
 
@@ -941,7 +941,7 @@
 
       &:after {
         transition: all 0.2s ease;
-        content: url('img/up.svg');
+        content: url('../../img/up.svg');
       }
     }
 
@@ -995,7 +995,7 @@
   }
   
   .all-team {
-    background: url('img/team/team.png') bottom center / 96% auto no-repeat, url('img/team/bg.jpg') bottom center / auto 100% no-repeat;
+    background: url('../../img/team/team.png') bottom center / 96% auto no-repeat, url('../../img/team/bg.jpg') bottom center / auto 100% no-repeat;
 
     &__circles-choose {
       right: 0;

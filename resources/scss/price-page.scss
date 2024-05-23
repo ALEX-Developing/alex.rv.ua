@@ -182,7 +182,7 @@
   }
 
   &__animated-iland {
-    cursor: url(img/cursor-click.svg), pointer;
+    cursor: url(../../img/cursor-click.svg), pointer;
     position: absolute;
     top: 3.2%;
     left: 50%;
@@ -356,91 +356,91 @@
     }
 
     &.html::before {
-      background-image: url('img/html.svg');
+      background-image: url('../../img/html.svg');
     }
     &.css::before {
-      background-image: url('img/css.svg');
+      background-image: url('../../img/css.svg');
     }
     &.js::before {
-      background-image: url('img/js.svg');
+      background-image: url('../../img/js.svg');
     }
     &.react::before {
-      background-image: url('img/react.svg');
+      background-image: url('../../img/react.svg');
     }
     &.load::before {
-      background-image: url('img/load.svg');
+      background-image: url('../../img/load.svg');
     }
     &.php::before {
-      background-image: url('img/php.svg');
+      background-image: url('../../img/php.svg');
     }
     &.gmaps::before {
-      background-image: url('img/google-maps.svg');
+      background-image: url('../../img/google-maps.svg');
     }
     &.jquery::before {
-      background-image: url('img/jquery.svg');
+      background-image: url('../../img/jquery.svg');
     }
     &.laravel::before {
-      background-image: url('img/laravel.svg');
+      background-image: url('../../img/laravel.svg');
     }
     &.mysql::before {
-      background-image: url('img/mysql.svg');
+      background-image: url('../../img/mysql.svg');
     }
     &.server::before {
-      background-image: url('img/server.svg');
+      background-image: url('../../img/server.svg');
     }
     &.client-side::before {
-      background-image: url('img/client-side.svg');
+      background-image: url('../../img/client-side.svg');
     }
     &.client-side::before {
-      background-image: url('img/client-side.svg');
+      background-image: url('../../img/client-side.svg');
     }
     &.responsive-design::before {
-      background-image: url('img/responsive-design.svg');
+      background-image: url('../../img/responsive-design.svg');
     }
     &.cross-browser::before {
-      background-image: url('img/cross-browser.svg');
+      background-image: url('../../img/cross-browser.svg');
     }
     &.ajax::before {
-      background-image: url('img/ajax.svg');
+      background-image: url('../../img/ajax.svg');
     }
     &.webpack::before {
-      background-image: url('img/webpack.svg');
+      background-image: url('../../img/webpack.svg');
     }
     &.scss::before {
-      background-image: url('img/scss.svg');
+      background-image: url('../../img/scss.svg');
     }
     &.git::before {
-      background-image: url('img/git.svg');
+      background-image: url('../../img/git.svg');
     }
     &.nodejs::before {
-      background-image: url('img/nodejs.svg');
+      background-image: url('../../img/nodejs.svg');
     }
     &.jwt::before {
-      background-image: url('img/jwt.svg');
+      background-image: url('../../img/jwt.svg');
     }
     &.api::before {
-      background-image: url('img/api.svg');
+      background-image: url('../../img/api.svg');
     }
     &.ui::before {
-      background-image: url('img/ui.svg');
+      background-image: url('../../img/ui.svg');
     }
     &.ux::before {
-      background-image: url('img/ux.svg');
+      background-image: url('../../img/ux.svg');
     }
     &.figma::before {
-      background-image: url('img/figma.svg');
+      background-image: url('../../img/figma.svg');
     }
     &.apache::before {
-      background-image: url('img/apache.svg');
+      background-image: url('../../img/apache.svg');
     }
     &.caching::before {
-      background-image: url('img/caching.svg');
+      background-image: url('../../img/caching.svg');
     }
     &.debugging::before {
-      background-image: url('img/debugging.svg');
+      background-image: url('../../img/debugging.svg');
     }
     &.ruby-on-rails::before {
-      background-image: url('img/ruby-on-rails.svg');
+      background-image: url('../../img/ruby-on-rails.svg');
     }
   }
 }
@@ -467,7 +467,7 @@
   }
 
   &__select {
-    cursor: url(img/cursor-click.svg), pointer;
+    cursor: url(../../img/cursor-click.svg), pointer;
     position: relative;
     background: none;
     border: 3px solid #6495ED;
@@ -535,7 +535,7 @@
     /* display: none; */
 
     & > div {
-      cursor: url(img/cursor-click.svg), pointer;
+      cursor: url(../../img/cursor-click.svg), pointer;
       display: block;
       position: relative;
       padding: 5px 10px;
@@ -666,12 +666,12 @@
   }
 
   &__checkbox {
-    cursor: url(img/cursor-click.svg), pointer;
+    cursor: url(../../img/cursor-click.svg), pointer;
     margin-right: 15px;
   }
 
   &__label-checkbox {
-    cursor: url(img/cursor-click.svg), pointer;
+    cursor: url(../../img/cursor-click.svg), pointer;
     color: #6495ED;
     font-size: 16px;
   }
@@ -729,7 +729,7 @@
     -moz-appearance: none;
     appearance: none;
     -webkit-tap-highlight-color: transparent;
-    cursor: url(img/cursor-click.svg), pointer;
+    cursor: url(../../img/cursor-click.svg), pointer;
     margin: 0;
 
     &:focus {
@@ -804,10 +804,10 @@
   transform: translateX(-50%);
   background: transparent;
   border-radius: 10px;
-  cursor: url(img/cursor-click.svg), pointer;
+  cursor: url(../../img/cursor-click.svg), pointer;
 
   & * {
-    cursor: url(img/cursor-click.svg), pointer;
+    cursor: url(../../img/cursor-click.svg), pointer;
   }
 
   &__value {
@@ -873,7 +873,7 @@
       height: 50px;
       border-radius: 50%;
       background: transparent;
-      cursor: url(img/cursor-click.svg), pointer;
+      cursor: url(../../img/cursor-click.svg), pointer;
       border: none;
       box-shadow: none;
     }
@@ -884,7 +884,7 @@
       height: 50px;
       border-radius: 50%;
       background: transparent;
-      cursor: url(img/cursor-click.svg), pointer;
+      cursor: url(../../img/cursor-click.svg), pointer;
       border: none;
       box-shadow: none;
     }
@@ -954,7 +954,7 @@
   }
 
   &__value-this {
-    cursor: url(img/cursor-click.svg), pointer;
+    cursor: url(../../img/cursor-click.svg), pointer;
     width: 40%;
     height: 22px;
     border-radius: 15px;
@@ -982,7 +982,7 @@
   }
 
   &__dot {
-    cursor: url(img/cursor-click.svg), pointer;
+    cursor: url(../../img/cursor-click.svg), pointer;
     top: -3px;
     width: 22px;
     height: 22px;
@@ -1083,7 +1083,7 @@
   }
 
   &__calculate-btn {
-    cursor: url(img/cursor-click.svg), pointer;
+    cursor: url(../../img/cursor-click.svg), pointer;
     padding: 5px 15px;
     border-radius: 30px;
     color: #fff;
@@ -1185,7 +1185,7 @@
   }
 
   &__form-btn-submit {
-    cursor: url(img/cursor-click.svg), pointer;
+    cursor: url(../../img/cursor-click.svg), pointer;
     background: #ffa500;
     padding: 5px 10px;
     font-size: 18px;
@@ -1209,7 +1209,7 @@
   }
 
   &__close {
-    cursor: url(img/cursor-click.svg), pointer;
+    cursor: url(../../img/cursor-click.svg), pointer;
     position: absolute;
     top: 10px;
     right: 20px;

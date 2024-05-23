@@ -86,11 +86,14 @@ return new class extends Migration
             $table->id();
 
             $table->string('name');
+            $table->string('title');
 
             $table->string('domain')->nullable();
             $table->string('figma_link')->nullable();
 
             $table->timestamp('deadline')->nullable();
+
+            $table->unsignedInteger('current_stage')->default(0);
 
             $table->boolean('is_published')->default(false);
             $table->boolean('is_awaiting_payment')->default(false);
@@ -286,10 +289,22 @@ return new class extends Migration
             $table->timestamps();
         });
 
+        Schema::create('order_statuses', function (Blueprint $table) {
+            $table->id();
+
+            $table->string('title');
+
+            $table->timestamps();
+        });
+
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
 
             $table->boolean('is_login')->default(false);
+
+            $table->unsignedBigInteger('order_status_id')->default(1);
+            $table->index('order_status_id', 'order_status_idx');
+            $table->foreign('order_status_id', 'order_status_fk')->on('order_statuses')->references('id');
 
             $table->unsignedBigInteger('user_id')->nullable();
             $table->index('user_id', 'order_user_idx');
