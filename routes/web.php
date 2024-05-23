@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\RouteController;
@@ -25,5 +26,12 @@ Route::post('/submit-order', [OrderController::class, 'store'])->name('submit.or
 Route::post('/orders/{order}/archive', [OrderController::class, 'archive'])->name('orders.archive');
 Route::post('/orders/{order}/success', [OrderController::class, 'success'])->name('orders.success');
 Route::post('/orders/{order}/new', [OrderController::class, 'new'])->name('orders.new');
+
+Route::get('/pay', [PaymentController::class, 'index']);
+Route::post('/pay', [PaymentController::class, 'pay']);
+Route::post('/liqpay/callback', [PaymentController::class, 'callback']);
+Route::post('/liqpay/callback', [PaymentController::class, 'callback'])->name('liqpay.callback');
+
+Route::get('/pay/success', [PaymentController::class, 'success'])->name('payment.success');
 
 require __DIR__.'/auth.php';
