@@ -21,9 +21,21 @@
     <link rel="apple-touch-icon" sizes="167x167" href="{{ URL('img/apple-touch-167.png') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ URL('img/apple-touch-180.png') }}">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Отримайте фірмовий сайт за короткі терміни👨‍💻 🌐Відстежуйте прогрес онлайн🌐 ⌚Середній час виконання 20 днів⌚ ✅Якість Вашого ресурсу головне✅ 🤑Безкоштовні правки 3 дні після виконання🤑 ⚙️Покращуйте свій сайт в особистому кабінеті⚙️">
+	<meta property="og:locale" content="uk_UA">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Створимо крутий cучасний сайт | ALEX Developing">
+	<meta property="og:description" content="Отримайте фірмовий сайт за короткі терміни👨‍💻 🌐Відстежуйте прогрес онлайн🌐 ⌚Середній час виконання 20 днів⌚ ✅Якість Вашого ресурсу головне✅ 🤑Безкоштовні правки 3 дні після виконання🤑 ⚙️Покращуйте свій сайт в особистому кабінеті⚙️">
+	<meta property="og:url" content="https://alex.rv.ua>
+	<meta property="og:site_name" content="ALEX Developing">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="ALEX Developing">
+	<meta name="twitter:title" content="Створимо крутий cучасний сайт | ALEX Developing">
+	<meta name="twitter:description" content="Отримайте фірмовий сайт за короткі терміни👨‍💻 🌐Відстежуйте прогрес онлайн🌐 ⌚Середній час виконання 20 днів⌚ ✅Якість Вашого ресурсу головне✅ 🤑Безкоштовні правки 3 дні після виконання🤑 ⚙️Покращуйте свій сайт в особистому кабінеті⚙️">
+	<title>Створимо крутий cучасний сайт | ALEX Developing</title>
     
     @yield('title')
     @vite(['resources/scss/app.scss'])
