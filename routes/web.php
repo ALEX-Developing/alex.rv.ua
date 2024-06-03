@@ -7,7 +7,7 @@ use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\RouteController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [RouteController::class, 'welcome'])->name('welcome');
+Route::get('/', [RouteController::class, 'projects'])->name('welcome');
 Route::get('/projects', [RouteController::class, 'projects'])->name('projects');
 Route::get('/projects/{name}', [ProjectController::class, 'show'])->name('projects.show');
 Route::get('/team', [RouteController::class, 'team'])->name('team');
